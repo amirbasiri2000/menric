@@ -1,0 +1,428 @@
+
+body{
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+// ======================================================================
+
+@font-face{
+    font-family: 'ir-sans';
+    src: url(../fonts/IRANSans.ttf);
+}
+@font-face{
+    font-family: 'kalame';
+    src: url(../fonts/KalamehBlack.ttf);
+}
+.farsi-font{
+    font-family: 'ir-sans';
+}
+.eng-font{
+    font-family: 'kalame';
+}
+// ===========================================================================
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+
+
+
+
+// ============================================================================
+.landing-page{
+
+    .nav-bar{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 1rem 0;
+        .nav-content{
+
+            .nav-right{
+
+                ul{
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    li{
+                        list-style-type: none;
+                        padding: 0 1rem;
+
+                        a{
+                            font-size: 1rem;
+                            color: #666;
+                            font-size: 'ir-sans';
+                        }
+                    }
+                }
+            }
+            .nav-center{
+                p{
+                    font-size: 2rem;
+                    color: #999;
+                    text-decoration: underline;
+                }
+            }
+            .nav-left{
+                
+                button{
+                    margin: 0 .3rem;
+                    padding: .7rem 2rem;
+                    font-size: 1.1rem;
+                    font-family: 'ir-sans';
+                }
+            }
+        }
+    }
+
+    .hero{
+        background-color: #100036;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+
+        .hero-right{
+            background-image: url(../assets/images/hero/right-hero-background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 37.5vw;
+            height: 97vh;
+            background-position: center;
+            font-family: 'kalame';
+            padding-top: 7rem;
+            padding-right: 3rem;
+
+            .text{
+                h1{
+                    color: #fff;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 50px;
+                    line-height: 58px;
+                }
+                p{
+                    font-family: 'ir-sans';
+                    font-size: 22px;
+                    color: #fff;
+                    padding-top: 10px;
+                }
+            }
+            .btn-below-cover{
+                width: 240px;
+                height: 69px;
+                background: linear-gradient(90deg, rgba(168, 237, 234, 0.4) 0%, rgba(254, 214, 227, 0.4) 100%);
+                border-radius: 25px;
+                transform: rotate(3.79deg);
+
+                .btn-content{
+                    background: linear-gradient(90deg, #A8EDEA 0%, #FFFFFF 100%);
+                    border-radius: 68px;
+                    display: inline-block;
+                    width: 240px;
+                    height: 69px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                    margin-top: 33px;
+                    transform: rotate(-3.79deg);
+                    
+
+                    p{
+                        background: transparent;
+                        font-size: 30px;
+                        font-weight: normal;
+                        font-family: 'ir-sans';
+                        color: #0182DD;
+                        padding: 0 10px;
+                    }
+                    img{
+                        width: 30px;
+                    }
+                }
+                .btn-content:hover{
+                    background: linear-gradient(93deg, #7ec1be 0%, #d9d9d9 100%);
+                }
+            }
+        }
+        .hero-left{
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            height: 100vh;
+
+            .flags-content{
+                // background: red;
+                position: relative;
+                width: 560px;
+                height: 560px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .center-image{
+                    width: 300px;
+    
+                    img{
+                        width: 100%;
+                    }
+                }
+    
+                .circle1{
+                    width: 350px;
+                    height: 350px;
+                    display: inline-block;
+                    border-radius: 50%;
+                    border: 1px solid #DCDCDC;
+                    position: absolute;
+                    top: 105px;
+                    left: 99px;
+                    animation: clircle 19s linear infinite;
+                    
+                    .flag{
+                        width: 50px;
+                        position: absolute;
+                        border-radius: 50%;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .flag:nth-child(1){
+                        left: 153px;
+                        top: -25px;
+                    }
+                    .flag:nth-child(2){
+                        left: -24px;
+                        top: 82px;
+                        width: 70px;
+                    }
+                    .flag:nth-child(3){
+                        left: 17px;
+                        bottom: 30px;
+                        box-shadow: 0px 0px 31px rgba(254, 177, 171, 0.64);
+                    }
+                    .flag:nth-child(4){
+                        left: 213px;
+                        bottom: -17px;
+                        width: 70px;
+                    }
+                    .flag:nth-child(5){
+                        left: 314px;
+                        bottom: 181px;
+                        width: 60px;
+                        box-shadow: 0px 0px 31px #59CCC6;
+                    }
+                }
+                .circle2{
+                    width: 550px;
+                    height: 550px;
+                    display: inline-block;
+                    border-radius: 50%;
+                    // border: 1px solid #DCDCDC;
+                    position: absolute;
+                    top: 6px;
+                    left: 3px;
+                    animation: clircle 50s linear infinite;
+                    
+                    .flag{
+                        width: 50px;
+                        position: absolute;
+                        animation: clircle 10s linear infinite;
+                        border-radius: 50%;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .flag:nth-child(1){
+                        left: 257px;
+                        top: -25px;
+                        box-shadow: 0px 0px 31px #59CCC6;
+                    }
+                    .flag:nth-child(2){
+                        left: 16px;
+                        top: 391px;
+                        box-shadow: 0px 0px 31px #2A6DF9;
+                    }
+                    .flag:nth-child(3){
+                        right: 4px;
+                        bottom: 113px;
+                        box-shadow: 0px 0px 30px #9728E8;
+                    }
+                }
+                @keyframes clircle{
+                    to{
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+            
+            .stone{
+                position: absolute;
+                width: 5px;
+                height: 100px;
+                background: linear-gradient(to top, rgba(255, 0, 107, 0.8) 0.32%, rgba(255, 0, 107, 0) 100%,transparent);
+                top: 100px;
+                left: 100px;
+                border-radius: 50px;
+                opacity: 1;
+                animation: stone 7s ease 0s infinite;
+                overflow: hidden;
+            }
+            .stone:nth-child(2){
+                top: 300px;
+                left: 400px;
+                background: linear-gradient(to top, rgba(0, 255, 194, 0.67) 0%, rgba(0, 255, 194, 0) 96.61%,transparent);
+            }
+            .stone:nth-child(3){
+                top: 500px;
+                left: 200px;
+                background: linear-gradient(to top, rgba(235, 0, 255, 0.6) 1.49%, rgba(235, 0, 255, 0) 89.63%,transparent);
+            }
+            .stone:nth-child(4){
+                top: 100px;
+                right: 100px;
+                left: inherit;
+                background: linear-gradient(to top, #00FFC2 8.15%, rgba(0, 255, 194, 0) 96.89%,transparent);
+            }
+            .stone:nth-child(5){
+                top: 300px;
+                right: 400px;
+                left: inherit;
+                background: linear-gradient(to top, rgba(255, 0, 107, 0.8) 0.32%, rgba(255, 0, 107, 0) 100%,transparent);
+            }
+            .stone:nth-child(6){
+                top: 500px;
+                right: 200px;
+                left: inherit;
+                background: linear-gradient(to top, #7000FF 0%, rgba(112, 0, 255, 0) 94.2%,transparent);
+            }
+            .stone:nth-child(7){
+                top: 0;
+                left: 45%;
+                background: linear-gradient(to top, rgba(255, 0, 107, 0.8) 0.32%, rgba(255, 0, 107, 0) 100%,transparent);
+            }
+            .stone:nth-child(even){
+                background: linear-gradient(to top, #384fde,transparent);
+                box-shadow: 0 4px 94px #384fde;
+            }
+
+            // ======================
+            .blink{
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                background: linear-gradient(to top, rgba(255, 0, 107, 0.8) 0.32%, rgba(255, 0, 107, 0) 100%,transparent);
+                top: 100px;
+                left: 100px;
+                border-radius: 50px;
+                opacity: 1;
+                overflow: hidden;
+            }
+            .blink:nth-child(2){
+                top: 300px;
+                left: 400px;
+                background: linear-gradient(to top, rgba(0, 255, 194, 0.67) 0%, rgba(0, 255, 194, 0) 96.61%,transparent);
+            }
+            .blink:nth-child(3){
+                top: 500px;
+                left: 200px;
+                background: linear-gradient(to top, rgba(235, 0, 255, 0.6) 1.49%, rgba(235, 0, 255, 0) 89.63%,transparent);
+            }
+            .blink:nth-child(4){
+                top: 100px;
+                left: 100px;
+                width: 5px;
+                height: 100px;
+                background: linear-gradient(to top, #00FFC2 8.15%, rgba(0, 255, 194, 0) 96.89%,transparent);
+            }
+            .blink:nth-child(5){
+                top: 300px;
+                left: 150px;
+                background: linear-gradient(to top, rgba(255, 0, 107, 0.8) 0.32%, rgba(255, 0, 107, 0) 100%,transparent);
+            }
+            .blink:nth-child(6){
+                top: 500px;
+                left: 104px;
+                background: linear-gradient(to top, #7000FF 0%, rgba(112, 0, 255, 0) 94.2%,transparent);
+            }
+            .blink:nth-child(7){
+                top: 0;
+                left: 45%;
+                background: linear-gradient(to top, rgba(255, 0, 107, 0.8) 0.32%, rgba(255, 0, 107, 0) 100%,transparent);
+            }
+            .blink:nth-child(8){
+                top: 500px;
+                left: 700px;
+                width: 5px;
+                height: 100px;
+                transform: rotate(45deg);
+                background: linear-gradient(to top, rgba(255, 0, 107, 0.8) 0.32%, rgba(255, 0, 107, 0) 100%,transparent);
+            }
+            .blink:nth-child(9){
+                top: 800px;
+                left: 650px;
+                background: linear-gradient(to top, rgba(235, 0, 255, 0.6) 1.49%, rgba(235, 0, 255, 0) 89.63%,transparent);
+            }
+            .blink:nth-child(10){
+                top: 200;
+                left: 190px;
+                background: linear-gradient(to top, #00FFC2 8.15%, rgba(0, 255, 194, 0) 96.89%,transparent);
+            }
+            .blink:nth-child(11){
+                top: 220px;
+                left: 410px;
+                background: linear-gradient(to top, rgba(255, 0, 107, 0.8) 0.32%, rgba(255, 0, 107, 0) 100%,transparent);
+            }
+            .blink:nth-child(12){
+                top: 490px;
+                left: 832px;
+                
+                background: linear-gradient(to top, #7000FF 0%, rgba(112, 0, 255, 0) 94.2%,transparent);
+            }
+            .blink:nth-child(13){
+                top: 47px;
+                left: 59%;
+                width: 5px;
+                height: 100px;
+                transform: rotate(45deg);
+                background: linear-gradient(to top, rgba(255, 0, 107, 0.8) 0.32%, rgba(255, 0, 107, 0) 100%,transparent);
+            }
+            .blink:nth-child(even){
+                background: linear-gradient(to top, #384fde,transparent);
+                box-shadow: 0 4px 94px #384fde;
+            }
+        }
+       
+    }
+}
+
+@keyframes first-layer-flags{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes stone{
+    from {
+        transform: translateY(-500%);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(0);
+        opacity: .3;
+    }
+}
